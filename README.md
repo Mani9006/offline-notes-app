@@ -287,6 +287,20 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 <!-- showcase:start -->
 
+## Research Report
+
+**Offline-First Note-Taking with Full-Text Search and Markdown Rendering**
+
+_An IndexedDB-backed PWA with FTS5-equivalent indexing and CRDT sync_
+
+A self-contained research-grade report (Abstract, Introduction, Research Problem, Research Questions, Literature Review, Research Method, Data Description, Analysis, Discussion, Conclusion, Future Work, References) is published with this repository.
+
+[Read the full report (PDF)](docs/research_report.pdf)
+
+**Keywords:** note-taking, full-text search, IndexedDB, Markdown, CRDT, PWA
+
+![Research metrics](docs/research_metrics.png)
+
 ## Architecture
 
 ```mermaid
