@@ -282,3 +282,38 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - Icons use inline SVG for zero external dependencies
 - Color scheme inspired by modern design systems
 - Offline-first architecture based on service worker best practices
+
+---
+
+<!-- showcase:start -->
+
+## Architecture
+
+```mermaid
+flowchart LR
+    Editor[Markdown Editor] --> Note[Note Model]
+    Note --> IDB[(IndexedDB)]
+    Note --> FTS[Full-Text Search]
+    FTS --> Results[Search Results]
+    App[React PWA] --> Editor
+    Note --> Export[Export MD]
+```
+
+## Test Results
+
+![Test results](docs/test_results.png)
+
+_This project is configuration-focused (Terraform / Kubernetes manifests / Docker Compose / PWA). Validation runs via the project's native tooling rather than a unit-test suite._
+
+## References & Further Reading
+
+- Berners-Lee, T. (2014). *Markdown — Original Spec.* [↗](https://daringfireball.net/projects/markdown/)
+- W3C IndexedDB API. None [↗](https://www.w3.org/TR/IndexedDB/)
+
+## Author
+
+**Manikanta Reddy Mandadhi** — Senior Data Scientist (RAG / Agentic AI)
+
+GitHub: [@Mani9006](https://github.com/Mani9006/offline-notes-app) · LinkedIn: [reddy1999](https://www.linkedin.com/in/reddy1999) · Portfolio: [manikantabio.com](https://www.manikantabio.com)
+
+<!-- showcase:end -->
